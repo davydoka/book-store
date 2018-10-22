@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="dist/style.css">
+  <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/latest/normalize.css">
+  <script type="text/javascript" src="dist/bundle.js"></script>
+  <title>Book Store</title>
+</head>
+<body>
+  <header class="main-header">
+    <div class="main-header__circles">
+      <i class="fa fa-circle fa-circle--red"></i>
+      <i class="fa fa-circle fa-circle--yellow"></i>
+      <i class="fa fa-circle fa-circle--green"></i>
+    </div>
+    <div class="main-header__title">
+      <i class="fa fa-book"></i>
+      MyBookApp
+    </div>
+    <div class="main-header__nav">
+      <a href="#" class="main-header-link">Help Center</a>
+      <i class="fa fa-circle fa-circle--black"></i>
+      <a href="#" class="main-header-link">Our Support</a>
+      <a href="#" class="main-header-link main-header-link--profile">
+        <img src="images/avatar-01.png" class="main-header-link__avatar">
+        John Doe
+        <i class="fa fa-chevron-circle-down"></i>
+      </a>
+    </div>
+  </header>
+  <aside class="sidebar">
+    <div class="sidebar__button">
+      <a href="#">ADD A BOOK</a>
+    </div>
+    <hr class="sidebar__line">
+    <div class="sidebar-menu">
+      <a href="#" class="sidebar-menu__link"><i class="fa fa-book"></i>Now Reading</a>
+      <a href="#" class="sidebar-menu__link sidebar-menu__link--active"><i class="fa fa-globe"></i>Browse</a>
+      <a href="#" class="sidebar-menu__link"><i class="fa fa-shopping-cart"></i>Buy Books</a>
+      <a href="#" class="sidebar-menu__link"><i class="fa fa-star"></i>Favourite Books</a>
+      <a href="#" class="sidebar-menu__link"><i class="fa fa-th-list"></i>Wishlist</a>
+      <a href="#" class="sidebar-menu__link"><i class="fa fa-clock-o"></i>History</a>
+    </div>
+    <hr class="sidebar__line">
+    <div class="sidebar-filters">
+      <a href="#" class="sidebar-filters__link sidebar-filters__link--magenta"><i class="fa fa-circle"></i>Must Read Titles</a>
+      <a href="#" class="sidebar-filters__link sidebar-filters__link--yellow"><i class="fa fa-circle"></i>Best Of List</a>
+      <a href="#" class="sidebar-filters__link sidebar-filters__link--cyan"><i class="fa fa-circle"></i>Classic Novels</a>
+      <a href="#" class="sidebar-filters__link sidebar-filters__link--purple"><i class="fa fa-circle"></i>Non Fiction</a>
+    </div>
+    <hr class="sidebar__line">
+    <ul class="sidebar-log">
+      <li class="sidebar-log__list">
+        <i class="fa fa-clock-o"></i>
+        <div class="sidebar-log-text">
+          You added <a href="#" class="sidebar-log-text__link">Fight Club</a> by
+          <a href="#" class="sidebar-log-text__link">Chuck Palahniuk</a> to your
+          <a href="#" class="sidebar-log-text__link">Must Read Titles</a>.
+          <div class="sidebar-log-text__time">24 minutes ago</div>
+        </div>
+      </li>
+      <li class="sidebar-log__list">
+        <i class="fa fa-clock-o"></i>
+        <div class="sidebar-log-text">
+          You added <a href="#" class="sidebar-log-text__link">The Trial</a> by
+          <a href="#" class="sidebar-log-text__link">Franz Kafka</a> to your
+          <a href="#" class="sidebar-log-text__link">Must Read Titles</a>.
+          <div class="sidebar-log-text__time">48 minutes ago</div>
+        </div>
+      </li>
+    </ul>
+  </aside>
+  <div class="content">
+  <header class="site-title">
+    <span class="site-title__text">Browse Available Books</span>
+  </header>
+  <header class="site-nav">
+    <nav class="main-menu">
+        <a href="#" class="main-menu__link main-menu__link--active">All books</a>
+        <a href="#" class="main-menu__link">Most recent</a>
+        <a href="#" class="main-menu__link">Most Popular</a>
+        <a href="#" class="main-menu__link">Free books</a>
+      <div class="search-bar">
+      <input class="search-bar__input" type="text" placeholder="Enter Keywords">
+      <button class="search-bar__button" type="submit"><i class="fa fa-search"></i></button>
+      </div>
+    </nav>
+  </header>
+  <main class="book-list">
+    <div class="book-list-item">
+      <img src="images/books/book-cover-1.png" class="book-list-item__image">
+      <div class="book-list-item__title"><a href="#">Jewels of Nizam</a></div>
+      <div class="book-list-item__author">by <a href="#">Geeta Devi</a></div>
+      <div class="book-list-item__rating">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star-half-o"></i>
+      </div>
+    </div>
+    <div class="book-list-item">
+      <img src="images/books/book-cover-2.png" class="book-list-item__image">
+      <div class="book-list-item__title"><a href="#">Cakes & Bakes</a></div>
+      <div class="book-list-item__author">by <a href="#">Sanjeev Kapoor</a></div>
+      <div class="book-list-item__rating">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star-o"></i>
+      </div>
+    </div>
+    <div class="book-list-item">
+      <img src="images/books/book-cover-3.png" class="book-list-item__image">
+      <div class="book-list-item__title"><a href="#">Jamie’s Kitchen</a></div>
+      <div class="book-list-item__author">by <a href="#">Jamie Oliver</a></div>
+      <div class="book-list-item__rating">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+      </div>
+    </div>
+    <div class="book-list-item">
+      <img src="images/books/book-cover-4.png" class="book-list-item__image">
+      <div class="book-list-item__title"><a href="#">Inexpensive Family Meals</a></div>
+      <div class="book-list-item__author">by <a href="#">Simon Holst</a></div>
+      <div class="book-list-item__rating">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+      </div>
+    </div>
+    <div class="book-list-item">
+      <img src="images/books/book-cover-5.png" class="book-list-item__image">
+      <div class="book-list-item__title"><a href="#">Paleo Slow Cooking</a></div>
+      <div class="book-list-item__author">by <a href="#">Chrissy Gower</a></div>
+      <div class="book-list-item__rating">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+      </div>
+    </div>
+    <div class="book-list-item">
+      <img src="images/books/book-cover-6.png" class="book-list-item__image">
+      <div class="book-list-item__title"><a href="#">Cook Like an Italian</a></div>
+      <div class="book-list-item__author">by <a href="#">Tobie Puttock</a></div>
+      <div class="book-list-item__rating">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+      </div>
+    </div>
+    <div class="book-list-item">
+      <img src="images/books/book-cover-7.png" class="book-list-item__image">
+      <div class="book-list-item__title"><a href="#">Suneeta Vaswani</a></div>
+      <div class="book-list-item__author">by <a href="#">Geeta Devi</a></div>
+      <div class="book-list-item__rating">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+      </div>
+    </div>
+    <div class="book-list-item">
+      <img src="images/books/book-cover-8.png" class="book-list-item__image">
+      <div class="book-list-item__title"><a href="#">Jamie Does</a></div>
+      <div class="book-list-item__author">by <a href="#">Jamie Oliver</a></div>
+      <div class="book-list-item__rating">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+      </div>
+    </div>
+    <div class="book-list-item">
+      <img src="images/books/book-cover-9.png" class="book-list-item__image">
+      <div class="book-list-item__title"><a href="#">Jamie’s italy</a></div>
+      <div class="book-list-item__author">by <a href="#">Jamie Oliver</a></div>
+      <div class="book-list-item__rating">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+      </div>
+    </div>
+    <div class="book-list-item">
+      <img src="images/books/book-cover-10.png" class="book-list-item__image">
+      <div class="book-list-item__title"><a href="#">Vegetables Cookbook</a></div>
+      <div class="book-list-item__author">by <a href="#">Matthew Biggs</a></div>
+      <div class="book-list-item__rating">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+      </div>
+    </div>
+  </main>
+  </div>
+  <footer class="main-footer">
+    <a href="#" class="main-footer__button main-footer__button--help"><i class="fa fa-question-circle"></i></a>
+    <a href="#" class="main-footer__button main-footer__button--settings main-footer__button--active"><i class="fa fa-cog"></i></a>
+  </footer>
+</body>
+</html>
